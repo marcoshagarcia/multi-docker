@@ -17,4 +17,4 @@ after_success:
   - docker push marcoshagarcia/multi-client
   - docker push marcoshagarcia/multi-nginx
   - docker push marcoshagarcia/multi-server
-  - docker push marcoshagarcia/multi-server
+  - docker push marcoshagarcia/multi-worker
