@@ -5,7 +5,7 @@ services:
 before_install:
   - docker build -t marcoshagarcia/reaqct-test -f ./client/Dockerfile.dev ./client 
 script:
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true marcoshagarcia/react-test npm test
 after_succes: 
   - docker build -t marcoshagarcia/multi-client ./client
   - docker build -t marcoshagarcia/multi-nginx ./nginx
